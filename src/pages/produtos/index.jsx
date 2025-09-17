@@ -1,13 +1,19 @@
 const Produtos = () => {
 
+    // objetivo de lista de pizzas
+    const pizzas =[
+        'Pizza Muçarela',
+        'Pizza Calabresa',
+        'Pizza`Portuguesa',
+    ]
+
+    const listaPizzas = pizzas.map(pizza=><li>{pizza}</li>)
 
     return (
         <div>
             <h3>Listagem de Produtos</h3>
             <ul>
-                <li>Pizza de Calabresa</li>
-                <li>Pizza de Muçarela</li>
-                <li>Pizza Dois Queijos</li>
+                {listaPizzas}
             </ul>
         </div>
     )
